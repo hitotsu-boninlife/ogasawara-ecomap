@@ -1,0 +1,379 @@
+{
+  "name": "Ogasawara ECO MAP",
+  "image": {
+    "width": 1522,
+    "height": 1076,
+    "bounds": {
+      "west": 0,
+      "south": 0,
+      "east": 0.02,
+      "north": 0.015
+    },
+    "minzoom": 14,
+    "maxzoom": 16
+  },
+  "gpsMaxAccuracyM": 60,
+  "spots": [
+    {
+      "id": "906a4fdf-9376-478c-b515-55adf1c98263",
+      "name": "Cave",
+      "real": {
+        "lat": 27.09612994446263,
+        "lng": 142.19736396073702
+      },
+      "px": [
+        587,
+        564
+      ],
+      "radiusM": 30,
+      "kind": "bottle",
+      "qrHash": "13d0e10d40a6ac4905b4ae52ae01e8c25bd5d2596b482272f2da1fba6729861f"
+    },
+    {
+      "id": "c9117f6b-238b-4c3d-9695-311d751d6421",
+      "name": "パーラーMAKANAI",
+      "real": {
+        "lat": 27.095974153168104,
+        "lng": 142.1967110370493
+      },
+      "px": [
+        542,
+        602
+      ],
+      "radiusM": 30,
+      "kind": "bottle",
+      "qrHash": "c23bd246d8876df9ce14a91006c608a492e4d382e8739c76c91e99211c401fcb"
+    },
+    {
+      "id": "3e3a892e-bd8e-43fa-a6da-d03c5fed8454",
+      "name": "HONU",
+      "real": {
+        "lat": 27.09532698570009,
+        "lng": 142.19535185137656
+      },
+      "px": [
+        483,
+        622
+      ],
+      "radiusM": 30,
+      "kind": "bottle",
+      "qrHash": "9a7f03e1a66d8b5211ec3ee27dda387e16847e5e120a0978ffbf05aeb4e3f555"
+    },
+    {
+      "id": "dea97b68-3cb2-42f9-a0a3-e1581878c1d9",
+      "name": "チャラ日和",
+      "real": {
+        "lat": 27.094935745904976,
+        "lng": 142.1941159842807
+      },
+      "px": [
+        405,
+        658
+      ],
+      "radiusM": 30,
+      "kind": "bottle",
+      "qrHash": "8a87f72b33687747726360b8f3a5a291a65995627cb2aedddcfa7bf3bbbb76c2"
+    },
+    {
+      "id": "3dea9e2e-040c-41e1-a901-81aa6e469624",
+      "name": "MERIENDA",
+      "real": {
+        "lat": 27.09489751726314,
+        "lng": 142.19383938434163
+      },
+      "px": [
+        386,
+        662
+      ],
+      "radiusM": 30,
+      "kind": "bottle",
+      "qrHash": "59b73c4c8d8268eadfca04fb9c6adef576b34cfe55bdffd9b66991b70c3254df"
+    },
+    {
+      "id": "9a637d80-eefa-47a5-ad75-8bedcb219892",
+      "name": "生協横",
+      "real": {
+        "lat": 27.094598821119565,
+        "lng": 142.19444683641274
+      },
+      "px": [
+        427,
+        678
+      ],
+      "radiusM": 30,
+      "kind": "water",
+      "qrHash": "cc0d56d617bc82962f68da1af5955900b5de018337712aed572a6e59002a7516"
+    },
+    {
+      "id": "abcdd103-aab8-4a59-bc76-838394ebe093",
+      "name": "ゲゲゲ横",
+      "real": {
+        "lat": 27.09402275523181,
+        "lng": 142.19389435498746
+      },
+      "px": [
+        404,
+        716
+      ],
+      "radiusM": 30,
+      "kind": "water",
+      "qrHash": "27835d4cf95b5f77e5d2e9e4a0615a46cec161031c7d1f95dd4659dec1e820b9"
+    },
+    {
+      "id": "15e45adb-b573-4cf0-9456-8e33852d2b79",
+      "name": "シャワー付近",
+      "real": {
+        "lat": 27.093978764855205,
+        "lng": 142.19310382271834
+      },
+      "px": [
+        345,
+        724
+      ],
+      "radiusM": 30,
+      "kind": "water",
+      "qrHash": "b0a8da62f60bee968460e36ad89f072990fda94db624d3a077afa084740b52e5"
+    },
+    {
+      "id": "a18d58ba-1b0d-401f-be3b-c14c74121aa6",
+      "name": "小笠原アイランズ農協",
+      "real": {
+        "lat": 27.094524439386205,
+        "lng": 142.19324704261928
+      },
+      "px": [
+        333,
+        688
+      ],
+      "radiusM": 30,
+      "kind": "bottle",
+      "qrHash": "b0f4dacd627c3100be4248c444b4979b9149aabf9b43921042898329cb9907e4"
+    },
+    {
+      "id": "0be12746-0e3b-4ecf-a196-6f50a014c124",
+      "name": "小笠原アイランズ農協 (給水スポット)",
+      "real": {
+        "lat": 27.094524439386205,
+        "lng": 142.19324704261928
+      },
+      "px": [
+        347,
+        688
+      ],
+      "radiusM": 30,
+      "kind": "water",
+      "qrHash": "099598f57c293b20737a78981703487f73c709e649d341e603aa8b32827444e8"
+    },
+    {
+      "id": "044d15dc-685e-4186-884b-fb45a0bd6be2",
+      "name": "資源リサイクル回収拠点ボックス",
+      "real": {
+        "lat": 27.094479954644626,
+        "lng": 142.19198932748128
+      },
+      "px": [
+        292,
+        695
+      ],
+      "radiusM": 30,
+      "kind": "eco",
+      "qrHash": "cc741a68b06cf3e08f91d25abe7599ad1414f149ea292f9d73cd4bea969e583f"
+    },
+    {
+      "id": "266d3fce-894f-4c88-8a90-60a1d191691b",
+      "name": "滑り台公園",
+      "real": {
+        "lat": 27.0980078557775,
+        "lng": 142.1938132943506
+      },
+      "px": [
+        411,
+        471
+      ],
+      "radiusM": 30,
+      "kind": "water",
+      "qrHash": "a612349033fbddeb29aac26c73cb852471d7838fc7cf5aadd3b6e7b6c255f4c8"
+    },
+    {
+      "id": "a47aa2bc-0372-45b1-b8aa-0c9824a1ef3c",
+      "name": "きまぐれカフェ",
+      "real": {
+        "lat": 27.100004417241802,
+        "lng": 142.19376397335006
+      },
+      "px": [
+        363,
+        336
+      ],
+      "radiusM": 30,
+      "kind": "bottle",
+      "qrHash": "cd6b986f020945105f167af95c00e2069fcd49352562343df9a39d0d71ef6bf7"
+    },
+    {
+      "id": "0f4b7e14-23fd-4cd4-95b5-5823706ce1f1",
+      "name": "ローカルベーカリー",
+      "real": {
+        "lat": 27.10087087590771,
+        "lng": 142.19521468379014
+      },
+      "px": [
+        464,
+        292
+      ],
+      "radiusM": 30,
+      "kind": "bottle",
+      "qrHash": "862787b4379e710f9cc1314f466efe0a115678ceca25482cfdb38b3c2a70b994"
+    },
+    {
+      "id": "d356c523-ff34-4455-9537-01c8a97712d3",
+      "name": "清瀬3号棟ゴミステーション",
+      "real": {
+        "lat": 27.102441068989226,
+        "lng": 142.1997105172891
+      },
+      "px": [
+        722,
+        193
+      ],
+      "radiusM": 30,
+      "kind": "compost",
+      "qrHash": "45dc7179ed6efa517f2d19418376488a60480f379df673e536116770cfe2e40c"
+    },
+    {
+      "id": "2180af30-6090-4fbb-8c21-87d16a33b188",
+      "name": "清瀬トンネル出口",
+      "real": {
+        "lat": 27.09787258376724,
+        "lng": 142.19743230562085
+      },
+      "px": [
+        574,
+        477
+      ],
+      "radiusM": 30,
+      "kind": "water",
+      "qrHash": "9ce4c0cec6253f28d3d329804529ea71239114db51393f520d11ae8ef90cc9a6"
+    },
+    {
+      "id": "f98c52df-90ec-4736-bae8-8c29f13185e9",
+      "name": "福祉センター建物内",
+      "real": {
+        "lat": 27.09966357934743,
+        "lng": 142.19992169076642
+      },
+      "px": [
+        727,
+        376
+      ],
+      "radiusM": 30,
+      "kind": "water",
+      "qrHash": "cbcf57a8cab2b130e3350193febd3b0f9d6fb40a529dda9cb074f0141066e4fa"
+    },
+    {
+      "id": "bf96129a-113b-482c-ba5c-94167742ec93",
+      "name": "あゆみの店",
+      "real": {
+        "lat": 27.09966357934743,
+        "lng": 142.19992169076642
+      },
+      "px": [
+        741,
+        363
+      ],
+      "radiusM": 30,
+      "kind": "eco",
+      "qrHash": "8129025b97687498bb22ec85a317dd06ca5ce1ba9223eaa47c928f28d40566cd"
+    },
+    {
+      "id": "e64aa1fa-f472-46cb-baa4-cc85b835203d",
+      "name": "福祉センター横公園",
+      "real": {
+        "lat": 27.09994428753844,
+        "lng": 142.20050686815688
+      },
+      "px": [
+        749,
+        352
+      ],
+      "radiusM": 30,
+      "kind": "water",
+      "qrHash": "a27f328d06b6f25337e9c0806e1c90fffbc928edf9ecc28fbba5fee36e283d96"
+    },
+    {
+      "id": "afa30daa-7f91-4ee4-9725-f0a92ac201fb",
+      "name": "曼荼羅COFFEE",
+      "real": {
+        "lat": 27.09997277385759,
+        "lng": 142.20432668564908
+      },
+      "px": [
+        950,
+        362
+      ],
+      "radiusM": 30,
+      "kind": "bottle",
+      "qrHash": "7ab6fbe655482cca8fe2eabdf5576b9879b0a8962acaf18c5460499c007b517d"
+    },
+    {
+      "id": "c1f7c45d-4a9a-4979-a0da-950fcb99241f",
+      "name": "奥村ゴミステーション",
+      "real": {
+        "lat": 27.098412,
+        "lng": 142.204786
+      },
+      "px": [
+        931,
+        457
+      ],
+      "radiusM": 30,
+      "kind": "compost",
+      "qrHash": "c21720ae42426cec18f82689844dd8ef296ba10507f44afd583f16b7aa2be230"
+    },
+    {
+      "id": "1e9e036c-1368-46f3-9361-451d28b6b60d",
+      "name": "マーメイドカフェ 移動キッチンカー",
+      "real": {
+        "lat": 27.07293058039672,
+        "lng": 142.20406153362111
+      },
+      "px": [
+        1357,
+        685
+      ],
+      "radiusM": 30,
+      "kind": "bottle",
+      "qrHash": "423b43d42550176fccf2f2440b790a16cf7042306d82f8a940a07f1f89e50d18"
+    },
+    {
+      "id": "ce0c1249-2716-419d-83aa-0d3675e184bf",
+      "name": "エコヴィレッジ ぷーらん",
+      "real": {
+        "lat": 27.066715353131244,
+        "lng": 142.20081409358735 
+      },
+      "px": [
+        1166,
+        919
+      ],
+      "radiusM": 30,
+      "kind": "eco",
+      "qrHash": "f77f039d3f436f36e231d8935be2baecb65c2341c039d72781ba2a1f7f895502"
+    },
+    {
+      "id": "38f6a623-67fc-45fd-beea-798d57ea7924",
+      "name": "USK COFFEE",
+      "real": {
+        "lat": 27.06023561848113,
+        "lng": 142.20376054451148
+      },
+      "px": [
+        1333,
+        1016
+      ],
+      "radiusM": 30,
+      "kind": "bottle",
+      "qrHash": "af16aa2fdf4ddd59c6e70b1f32978a8fd1e8130b2fe7a1a092055ac36979dabc"
+    }
+  ],
+  "extraControlPoints": []
+}

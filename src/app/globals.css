@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1c2f4a;
+  --color-paper: #f6f8fa;
+  --color-stamp: #d4372c;
+  --color-stamp-dark: #b02a21;
+  --color-stamp-rgb: 212 55 44;
+  --color-gps: #2563eb;
+  --font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", system-ui, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overscroll-behavior: none;
+  background: var(--color-ink);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ---- 地図上のマーカー ---- */
+.spot {
+  position: relative; /* ::before（シェイプ）と ::after（リング）の基準点 */
+  width: 30px;
+  height: 30px;
+  border-radius: 9999px;
+  border: 2px solid var(--color-ink);
+  background: #fffdf5;
+  color: var(--color-ink);
+  font: 700 12px/1 var(--font-sans);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 2px 0 rgb(28 47 74 / 0.35);
+  cursor: pointer;
+}
+/* ---- ピン種別カラー・シェイプ（--done より前に定義して上書きされるようにする） ---- */
+/* clip-path を ::before に移すことで、::after のリングアニメーションがクリップされない */
+
+/* 水：💧 型（上が尖り、下が丸い） */
+/* z-index: 0 で積み重ねコンテキストを生成 → ::before を z-index: -1 にしてテキスト（済）を前面へ */
+.spot--water { background: transparent; border: none; box-shadow: none; color: #1c2f4a; z-index: 0; }
+.spot--water::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: #0FF6FF;
+  clip-path: polygon(50% 0%, 70% 20%, 90% 45%, 93% 63%, 83% 83%, 62% 96%, 50% 100%, 38% 96%, 17% 83%, 7% 63%, 10% 45%, 30% 20%);
+  filter: drop-shadow(0 0 1.5px #00C4CC) drop-shadow(0 2px 1px rgb(28 47 74 / 0.3));
+}
+/* ボトル：変更なし（円形） */
+.spot--bottle { background: #E94A31; border-color: #C33020; color: #fff; }
+/* コンポスト：ダイヤ型 */
+.spot--compost { background: transparent; border: none; box-shadow: none; color: #1c2f4a; z-index: 0; }
+.spot--compost::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: #F690CA;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  filter: drop-shadow(0 0 1.5px #D060A0) drop-shadow(0 2px 1px rgb(28 47 74 / 0.3));
+}
+/* エコ：星型（5点） */
+.spot--eco { background: transparent; border: none; box-shadow: none; color: #1c2f4a; z-index: 0; }
+.spot--eco::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: #FFD83A;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  filter: drop-shadow(0 0 1.5px #D4A800) drop-shadow(0 2px 1px rgb(28 47 74 / 0.3));
+}
+
+.spot--done {
+  background: var(--color-stamp);
+  border-color: var(--color-stamp-dark);
+  color: #fff;
+  transform: rotate(-8deg);
+}
+/* 形状ピンの押印済み：::before の色をスタンプ色に上書き */
+.spot--done.spot--water::before,
+.spot--done.spot--compost::before,
+.spot--done.spot--eco::before {
+  background: var(--color-stamp);
+  filter: none;
+}
+.spot--target {
+  width: 38px;
+  height: 38px;
+  border-color: var(--color-stamp);
+  font-size: 14px;
+  z-index: 1;
+}
+.spot--target::after,
+.spot--tutorial-glow::after {
+  content: "";
+  position: absolute;
+  border-radius: 9999px;
+  border: 2px solid var(--color-stamp);
+  animation: ring 1.8s ease-out infinite;
+  pointer-events: none;
+}
+.spot--target::after        { inset: -10px; }
+.spot--tutorial-glow::after { inset: -8px; box-shadow: 0 0 12px 6px rgb(var(--color-stamp-rgb) / 0.5); }
+/* リングをピン種別の色に合わせる */
+.spot--water.spot--target::after,   .spot--water.spot--tutorial-glow::after   { border-color: #00C4CC; }
+.spot--bottle.spot--target::after,  .spot--bottle.spot--tutorial-glow::after  { border-color: #C33020; }
+.spot--compost.spot--target::after, .spot--compost.spot--tutorial-glow::after { border-color: #D060A0; }
+.spot--eco.spot--target::after,     .spot--eco.spot--tutorial-glow::after     { border-color: #D4A800; }
+@keyframes ring {
+  from { transform: scale(0.75); opacity: 0.9; }
+  to { transform: scale(1.25); opacity: 0; }
+}
+.me {
+  pointer-events: none; /* スポットに到着して重なってもピンをタッチできるように */
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  background: var(--color-gps);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px rgb(37 99 235 / 0.35), 0 2px 6px rgb(0 0 0 / 0.35);
+}
+/* ---- チュートリアル用ハイライト ---- */
+/* ボタン等の要素に付与するグロー */
+.tutorial-glow {
+  animation: tutorial-glow-pulse 1.4s ease-in-out infinite;
+}
+@keyframes tutorial-glow-pulse {
+  0%, 100% { box-shadow: 0 0 0 2px var(--color-stamp), 0 0 10px 5px rgb(var(--color-stamp-rgb) / 0.4); }
+  50%       { box-shadow: 0 0 0 4px var(--color-stamp), 0 0 24px 12px rgb(var(--color-stamp-rgb) / 0.7); }
+}
+
+/* ---- 景品ポップアップ ---- */
+@keyframes flower-fall {
+  0%   { transform: translateY(-3rem) rotate(0deg);   opacity: 1; }
+  100% { transform: translateY(110vh) rotate(600deg); opacity: 0.5; }
+}
+@keyframes reward-popup-in {
+  0%   { transform: scale(0.4); opacity: 0; }
+  55%  { transform: scale(1.12); opacity: 1; }
+  75%  { transform: scale(0.95); }
+  90%  { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+.reward-popup-in {
+  animation: reward-popup-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ---- トースト通知フェードアウト ---- */
+@keyframes toast-fade-out {
+  0%, 60% { opacity: 1; }
+  100%     { opacity: 0; }
+}
+.toast-fade-out {
+  animation: toast-fade-out 2s ease-in forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spot--target::after,
+  .spot--tutorial-glow::after { animation: none; }
+  .tutorial-glow { animation: none; box-shadow: 0 0 0 3px var(--color-stamp); }
+  .toast-fade-out { animation: none; }
+  .reward-popup-in { animation: none; }
+}

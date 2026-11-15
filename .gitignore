@@ -1,0 +1,15 @@
+node_modules
+.next
+out
+next-env.d.ts
+tsconfig.tsbuildinfo
+qr/secrets.json
+public/maplibre
+
+# macOS
+.DS_Store
+
+# 環境変数（.env.example のみ管理対象）
+.env
+.env.*
+!.env.example

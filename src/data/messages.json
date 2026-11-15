@@ -1,0 +1,122 @@
+{
+  "header": {
+    "stampRally": "スタンプラリー",
+    "subtitle": "マイボトルを持ち歩こう！",
+    "countUnit": "か所",
+    "complete": "コンプリート！"
+  },
+  "footer": {
+    "copyright": "© ひとつ~Bonin Life~",
+    "orgName": "ひとつ ~Bonin Life~"
+  },
+  "map": {
+    "distance": "このスポットまで約{distance}",
+    "buttons": {
+      "stampList": "スタンプ一覧",
+      "countryCode": "カントリーコード",
+      "urlShare": "URLをシェア",
+      "currentLocation": "現在地へ"
+    }
+  },
+  "bottomSheet": {
+    "navigate": "ここに行く",
+    "stamp": "スタンプを押す",
+    "stamped": "記録済み",
+    "stampedBadge": "済",
+    "closeAriaLabel": "閉じる"
+  },
+  "toast": {
+    "stampSuccess": "「{name}」のスタンプを押しました",
+    "qrInvalid": "このQRコードは使えません",
+    "alreadyStamped": "「{name}」は記録済みです",
+    "scanFailed": "読み取りに失敗しました",
+    "proximity": "「{name}」に到着しました",
+    "qrUnavailable": "現在QRコードはご利用いただけません"
+  },
+  "note": {
+    "arrived": "到着しました。スタンプを押せます",
+    "lowAccuracy": "GPSの精度が低いです（±{accuracy}m）。開けた場所へ移動するか、QRで押してください"
+  },
+  "gps": {
+    "loading": "現在地を取得しています…",
+    "denied": "位置情報の利用が許可されていません。ブラウザの設定を確認してください",
+    "unavailable": "現在地を取得できません。空の開けた場所に移動してください",
+    "timeout": "現在地の取得に時間がかかっています",
+    "unsupported": "この端末では位置情報が使えません"
+  },
+  "pinLegend": {
+    "water": "給水スポット",
+    "bottle": "マイボトル協賛店",
+    "compost": "生ごみ回収拠点",
+    "eco": "その他エコ拠点"
+  },
+  "countryCode": {
+    "triggerAriaLabel": "小笠原カントリーコードを見る",
+    "triggerText": "?",
+    "title": "小笠原カントリーコード",
+    "copyAriaLabel": "テキストをコピー",
+    "copied": "コピーしました",
+    "close": "閉じる",
+    "rules": [
+      "貴重な小笠原を後世に引き継ぐ",
+      "ゴミは絶対に捨てずに、すべて持ち帰る",
+      "歩道をはずれて歩かない",
+      "動植物は採らない、持ち込まない、持ち帰らない",
+      "動植物に気配りをしながらウォッチングを楽しむ",
+      "サンゴ礁等の特殊地形を壊さない",
+      "来島記念などの落書きをしない",
+      "全島キャンプ禁止となっているので、キャンプはしない",
+      "移動は、できるだけ自分のエネルギーを使う",
+      "水は大切にし、トイレなど公共施設はきれいに使う"
+    ]
+  },
+  "stampList": {
+    "title": "スタンプ一覧",
+    "countUnit": "か所",
+    "close": "閉じる"
+  },
+  "installPrompt": {
+    "title": "ホーム画面に追加",
+    "install": "追加",
+    "iosInstruction": "共有 → 「ホーム画面に追加」でインストール",
+    "closeAriaLabel": "閉じる"
+  },
+  "qrScanner": {
+    "dialogAriaLabel": "QRコードを読み取る",
+    "instruction": "現地のQRコードを枠の中に写してください",
+    "placeholder": "読み取れない場合はコードを貼り付け",
+    "submit": "送信",
+    "close": "閉じる",
+    "cameraError": "カメラを使えません。ブラウザのカメラ許可を確認してください（HTTPS接続が必要です）"
+  },
+  "drawer": {
+    "openAriaLabel": "メニューを開く",
+    "closeAriaLabel": "メニューを閉じる",
+    "instagram": "Instagram",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー"
+  },
+  "reward": {
+    "stage1Title": "1か所目！",
+    "stage1Body": "あと4か所まわると、うれしいことがあるかも…？",
+    "stage5Title": "5か所制覇！",
+    "stage5Body": "マップをダウンロードして旅の記念に。あと{remaining}か所でコンプリート！",
+    "completeTitle": "コンプリート！",
+    "completeBody": "全スポットを歩いてくれてありがとう。この体験を誰かにシェアしませんか？",
+    "shareButton": "シェアする",
+    "shareTitle": "小笠原エコマップ スタンプラリー",
+    "shareText": "スタンプラリーをコンプリートしました！",
+    "buttonLabel": "マップをダウンロード",
+    "closeLabel": "閉じる",
+    "fileName": "ogasawara-eco-map.png"
+  },
+  "urlShare": {
+    "title": "このページをシェア",
+    "copyButton": "URLをコピー",
+    "copied": "コピーしました",
+    "close": "閉じる"
+  },
+  "validation": {
+    "requiresHttps": "HTTPS(またはlocalhost)で開いてください"
+  }
+}
